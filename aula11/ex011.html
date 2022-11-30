@@ -26,13 +26,17 @@
             var res = window.document.querySelector('div#res')
             var nac  = String(naci.value)
             res.innerHTML = `<p>Você esta morando em <strong>${nac}</strong></p>`
+            
             if (nac == 'Brasil') {
                 res.innerHTML += `Você é Brasileiro.`
-            } else if (nac == 'brasil') {
+            } else { 
+                 if (nac == 'brasil') {
                 res.innerHTML += `Você é Brasileiro.`
-            } else {
+                } else {
                 res.innerHTML += `Você é Estrangeiro`
+                }
             }
+           
         }
      </script>
     
